@@ -3,20 +3,13 @@
 ### Technologies Used:
 
 ### Frameworks, Language and Libraries to be used in this project:
-- Java for implementing functionality throughout the project. 
-- MySQL for data handling and saving data from the website into the database.
-- Spring MVC framework to handle HTTP requests as well as increasing testability and simplification.
-- Spring Security for authentication, authorization and providing security for our web application.
-- Gherkin - Cucumber for automated testing on our feature files.
-- Hibernate framework for mapping the model to the database, and keeping the database persistent. 
-- Gradle for building the project (deploys the application to a web container in the build).
-- Maven for our build automation and for building our software and describing our dependencies.
-- JSTL for allowing us to manipulate XML and SQL documents. Also allows us to use Apache container.
-- HTML for creating our web pages.
-- CSS for creating the presentation of our web pages. 
-- JavaScript for creating functions on our web pages. 
-- JavaMail API for sending messages and using the messaging application.
-- Leaflet.js API for implementing the OpenStreetMaps
+- Python for implementing functionality throughout the project.
+- SpeechRecognition for implementing STT engines into the system.
+- YAML for importing, reading and configuring the user profile.
+- eSpeak to implement the TTS engine.
+- Pip to manage python packages
+- PyAudio to record and output audio across multiple OS.
+- Google STT to convert audio input into strings
 
 ### Why we choose Spring MVC Framework?
 The Spring Model-View-Controller (MVC) is a flexible and high efficiency framework, and it provides model, view and controller to handle different work. Therefore, different people are able to develop a model, view and controller at the same time. Plus, it is easier to test on the spring framework because of the avoidance specific inheritance and dependence of controllers.
