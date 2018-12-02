@@ -11,18 +11,18 @@
 - PyAudio to record and output audio across multiple OS.
 - Google STT to convert audio input into strings
 
-### Why we choose Spring MVC Framework?
-The Spring Model-View-Controller (MVC) is a flexible and high efficiency framework, and it provides model, view and controller to handle different work. Therefore, different people are able to develop a model, view and controller at the same time. Plus, it is easier to test on the spring framework because of the avoidance specific inheritance and dependence of controllers.
+### Why we chose STT, TTS and Logic Engine?
+The engines used provide the groundwork for the VA  to work. Therefore, different people are able to communicate with it at different times.
 
-The core components of SpringMVC are: Dispatcher Servlet, Handler Mappings, Controller, Model, View and View Resolver.
+The core components of the VA are are: STT, Logic, Responses and TTS.
 
-- Dispatcher Servlet is not only the first receiver of the requests but it consults the HandlerMapping to invoke the Controller associated with the request but also sends the view name to a ViewResolver to find the actual View to invoke.
+- Google STT converts the users speech into a string via audio processing and sends this as a variable to Logic Handling. 
 
-- Model is the part of handling application data logic which can be used by the View to display the information.
+- Logic takes the string and and checks whether the string matches against the arguments of functions. The string is then passed to the Responses file.
 
-- View is the part of handling the web page that gives us a visualisation of the working code. Formats like jsp and html are used for display which then in turn gets interpreted by the client and we output pages showing the events.
+- Responses.py is the encyclopedia of set responses for the questions asked by the user. It stores these ansers inside functions, which are then passed to the TTS engine. 
 
-- Controller is the part of handling the interaction between user and web pages which receives request from Dispatcher Servlet through Handler Adapters.
+- TTS outputs the response via the TTS engine, eSpeak (Linux) or Say (for OS X). 
 
 ![alt tag](http://cdn.dzone.com/static/images/vaannila/spring/spring-mvc-pic-9.gif)
 
